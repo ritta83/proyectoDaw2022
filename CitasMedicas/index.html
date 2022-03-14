@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+lenguaje: HTML
+web o pagina:
+entorno: 
+autor: Rita Mª Mesa Jimènez
+fecha: marzo 2022
+-->
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clinica Medica</title>
+	<!--Prefetch:carga la siguiente pagina que visite,la que se considere mas visitada-->
+	<link rel="prefetch" href="login.html" as="document">
+	<meta name="description" content="Página web clinica medica">
+	
+	<!--Preload:carga elementos necesarios inmediatamente-->
+	<link rel="preload" href="css/normalize.css" as="style">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;600&family=Montagu+Slab:wght@300;600&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+	crossorigin="crossorigin" as="font">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;600&family=Montagu+Slab:wght@300;600&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+	 rel="stylesheet">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+	 
+	 <link rel="preload" href="css/estilo.css" as="style">
+	 <link rel="stylesheet" href="css/estilo.css">
+	 <link rel="stylesheet"  type="text/css" href="logo.css">
+
+	
+</head>
+<body>
+	<header class="header">
+
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<h1 class="logo__nombre centrar-texto">Clínica<span class="logo__bold">Médica</span></h1>
+				</a>
+				<nav class="navegacion">
+					<a href="index.html" class="navegacion__enlace">Nosotros</a>
+					<a href="" class="navegacion__enlace"><span class="md">Tratamientos</span></a>
+					<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+					<a href="login.html" class="navegacion__enlace">Registrarse</a>
+					<a href="" class="icon icon-brightness-contrast"></a>
+				</nav>
+			</div>
+		</div>
+		<div class="header__texto">
+			<h2 class="no-margin">Cubrimos asistencia médica diaria sin demoras en la asistencia.</h2>
+			<p class="no-margin"> Nuestras consultas están dotadas con la última tecnología para la realización de pruebas diagnosticas y terapéuticas, 
+			todo sin salir de nuestro centro médico.</p>
+		</div>
+	</header>
+
+	<div class="contenedor contenido-principal">
+		<main class="clinica">
+			<h4>Nuestro Equipo</h4>
+
+			<article class="entrada">
+				<div class="entrada__imagen">
+					<!--webp: las imagenes pesan menos, sino soporta pasa al jpg-->
+					<picture>
+						<source loading="lazy" srcset="img/entrada1.webp" type="image/webp">	
+						<img loading="lazy" src="img/entrada1.jpg" alt="imagen blog">
+					</picture>
+					
+				</div>
+
+				<div class="entrada__contenido">
+					<h3 class="fade">Citas Médicas<br></h3>
+					<p>Nuestro centro cuenta con un cuadro médico altamente cualificado y con la última tecnología de diagnóstico 
+						y tratamiento para garantizar la mejor asistencia a nuestros pacientes. El equipo médico programa planes 
+						de salud integral que incluyen actividades preventivas, diagnósticas y terapéuticas orientadas a promover 
+						el cuidado, la recuperación de la salud y la plena satisfacción del paciente. Nuestros valores: ética, seguridad, 
+						calidad humana y vanguardia tecnológica.</p>
+				
+					 <a href="login.html" class="boton boton--primario">Solicitar Cita</a>
+				</div>
+			</article>
+			
+
+			<article class="entrada">
+				<div class="entrada__imagen">
+					<!--webp: las imagenes pesan menos, sino soporta pasa al jpg-->
+					<picture>
+						<source loading="lazy" srcset="img/familia3.webp" type="image/webp">	
+						<img loading="lazy" src="img/familia3.jpg" alt="imagen blog">
+					</picture>
+				</div>
+
+				<div class="entrada__contenido">
+					<h4 class="no-margin">Para toda la Familia</h4>
+					<p>Un gran equipo médico y los últimos avances tecnológicos orientados a promover la salud de nuestros pacientes</p>
+					 <a href="" class="boton boton--primario">Leer Entrada</a>
+				</div>
+			</article>	
+		</main>
+
+		<aside class="sidebar">
+			<h4>El bienestar tú Salud</h4>
+
+			<ul class="derechas no-padding">
+				<li class="widget-derecha">
+					<h4 class="no-margin">Test rápido Covid-19</h4>
+					<p class="widget-derecha__label">Precio:
+						<span class="widget-derecha__info">35</span>
+					</p>
+					
+					<a href="https://www.youtube.com/watch?v=cHDhU4snXh4"  class="boton boton--secundario">Ver Video</a>
+				</li>
+				<li class="widget-derecha">
+					<h4 class="no-margin">Reconocimientos Médicos</h4>
+					<p class="widget-derecha__label">Precio:
+						<span class="widget-derecha__info">40</span>
+					</p>
+					
+					<a href="" class="boton boton--secundario">Más Información</a>
+				</li>
+			</ul>
+		</aside>
+	</div>
+
+	<!-- Modal -->
+<div class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <p>Para solicitar los distintos tratamientos que realizan nuestros
+		  especialistas en la clinica registrate si eres cliente o  preguntenos en <span href="contacto.html">contacto.</span>
+	  </p>
+	  
+	</div>
+  
+  </div>
+
+  <!-- Cookie -->
+	<div class="cookie-container">
+		<p>
+			Este sitio web utiliza cookies para mejorar su experiencia. Las esenciales para el funcionamiento del 
+			sitio web se almacenan en su ordenador. También utilizamos cookies de terceros que nos ayudan a analizar y 
+			comprender cómo utiliza este sitio web y se almacenarán solo con su consentimiento y con <a href="#"></a>política de cookies</a>. 
+		</p>
+	  <button class="cookie-btn">
+		Aceptar
+	  </button>
+	  </div>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<h1 class="logo__nombre centrar-texto">Clínica<span class="logo__bold">Médica</span></h1>
+				</a>
+				<nav class="navegacion">
+					<a href="index.html" class="navegacion__enlace">Nosotros</a>
+					<a href="" class="navegacion__enlace"><span class="md">Tratamientos</span></a>
+					<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+				</nav>
+			</div>
+
+		</div>
+	</footer>
+
+	
+	<script src="js/modernizr.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/cambios.js"></script>
+</body>
+</html>

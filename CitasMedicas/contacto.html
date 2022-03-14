@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+lenguaje: HTML
+web o pagina:
+entorno: 
+autor: Rita Mª Mesa Jimènez
+fecha: noviembre 2021
+-->
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ClinicaMedica</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;600&family=Montagu+Slab:wght@300;600&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+	<header class="header">
+
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<h1 class="logo__nombre centrar-texto">Clínica<span class="logo__bold">Médica</span></h1>
+				</a>
+				<nav class="navegacion">
+					<a href="index.html" class="navegacion__enlace">Nosotros</a>
+					<a href="login.html" class="navegacion__enlace">Registrarse</a>
+					
+				</nav>
+			</div>
+		</div>
+		<div class="header__texto">
+			<h2 class="no-margin">Cubrimos asistencia médica diaria sin demoras en la asistencia.</h2>
+			<p class="no-margin"> Nuestras consultas están dotadas con la última tecnología para la realización de pruebas diagnosticas y terapéuticas, 
+			todo sin salir de nuestro centro médico.</p>
+		</div>
+	</header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" pleceholder="Tu Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="e-mail" pleceholder="Tu E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit"value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+
+    </main>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="barra">
+				<a class="logo" href="index.html">
+					<h1 class="logo__nombre centrar-texto">Clínica<span class="logo__bold">Médica</span></h1>
+				</a>
+				<nav class="navegacion">
+					<a href="index.html" class="navegacion__enlace">Nosotros</a>
+					<a href="contacto.html" class="navegacion__enlace">Contacto</a>
+				</nav>
+			</div>
+
+		</div>
+	</footer>
+    <script src="js/modernizr.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
